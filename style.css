@@ -12,7 +12,9 @@ body {
   color: hsl(234, 29%, 20%);
 }
 
-.container {
+/* MOBILE FIRST VIEW */
+#container,
+#thanks {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -23,7 +25,7 @@ h1 {
   font-size: 2.4rem;
 }
 
-#subscribeButton {
+button {
   padding: 20px;
   border-radius: 10px;
   font-size: 1rem;
@@ -31,5 +33,51 @@ h1 {
   border: none;
   color: white;
   background-color: hsl(234, 29%, 20%);
-  margin: 20px 0;
+  margin: 30px 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.points {
+  margin: 10px 0;
+  display: flex;
+}
+
+.icon-success {
+  background-color: hsl(4, 100%, 67%);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+#email {
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+input {
+  padding: 20px;
+  border-radius: 10px;
+  border: hsl(231, 7%, 60%) solid 1px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 15px;
+  width: 100vw;
+  margin: auto;
+}
+
+/* SUCCESS MESSAGE */
+
+#thanks {
+  display: none;
+  flex-direction: column;
+}
+
+.main-text {
+  height: 80vh;
+  padding-top: 15vh;
 }
