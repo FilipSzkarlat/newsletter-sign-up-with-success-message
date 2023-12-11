@@ -1,12 +1,25 @@
-function thankYou() {
-  document.getElementById("thanks").style.display = "flex";
-  document.getElementById("container").style.display = "none";
-  document.getElementById("picture").style.display = "none";
+const email = document.getElementById("email"),
+  thanks = document.getElementById("thanks"),
+  container = document.getElementById("container"),
+  picture = document.getElementById("picture");
+
+function thankYou(e) {
+  if (validateEmail(email.value)) {
+    alert("stop");
+    thanks.style.display = "flex";
+    container.style.display = "none";
+    picture.style.display = "none";
+  } else {
+    alert("email not valid");
+    return false;
+  }
+
+  e.preventDefault();
 }
 
 function mainPage() {
-  document.getElementById("thanks").style.display = "none";
-  document.getElementById("container").style.display = "flex";
-  document.getElementById("picture").style.display = "block";
-  document.getElementById("mail").value = "";
+  thanks.style.display = "none";
+  container.style.display = "flex";
+  picture.style.display = "block";
+  email.value = "";
 }

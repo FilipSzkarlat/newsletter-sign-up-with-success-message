@@ -38,6 +38,7 @@ button {
 
 button:hover {
   cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
 }
 
 .points {
@@ -51,7 +52,7 @@ button:hover {
   margin-right: 15px;
 }
 
-#email {
+label {
   font-size: 0.7rem;
   font-weight: 700;
   margin: 20px 0 10px 0;
@@ -63,11 +64,21 @@ input {
   border: hsl(231, 7%, 60%) solid 1px;
 }
 
+input:hover {
+  cursor: pointer;
+}
+
 .attribution {
   position: absolute;
   bottom: 15px;
   width: 100vw;
   margin: auto;
+}
+
+/* FORM SECTION */
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 /* SUCCESS MESSAGE */

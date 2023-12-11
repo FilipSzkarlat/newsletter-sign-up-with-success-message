@@ -334,9 +334,19 @@
         </svg>
         <p>And much more!</p>
       </div>
-      <p id="email">Email address</p>
-      <input type="email" id="mail" value="" placeholder="email@company.com" />
-      <button onclick="thankYou()">Subscribe to monthly newsletter</button>
+      <form>
+        <label for="email">Email address</label>
+        <input
+          type="email"
+          id="email"
+          value=""
+          placeholder="email@company.com"
+          required
+        />
+        <button type="submit" id="submit" onclick="thankYou()">
+          Subscribe to monthly newsletter
+        </button>
+      </form>
     </div>
 
     <!-- Sign-up form end -->
@@ -373,7 +383,7 @@
           button inside to confirm your subscription.
         </p>
       </div>
-      <button onclick="mainPage()">Dismiss message</button>
+      <input type="submit" onclick="mainPage()" value="Dismiss message" />
     </div>
 
     <!-- Success message end -->
