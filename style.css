@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: white;
 }
 
 main {
@@ -20,6 +21,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 /* THANKS MESSAGE */
@@ -79,6 +81,10 @@ button:hover {
 }
 
 /* MAIN CONTENT */
+.desktop-illustration {
+  display: none;
+}
+
 .content-container {
   width: 85%;
 }
@@ -103,12 +109,12 @@ button:hover {
   font-weight: 400;
 }
 
-label {
+form label {
   font-weight: 700;
   font-size: small;
 }
 
-input {
+form input {
   width: 100%;
   padding: 20px;
   font-size: 1rem;
@@ -123,4 +129,46 @@ footer {
   text-align: center;
   align-self: center;
   margin: 20px 0;
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 380px) {
+  .mobile-illustration {
+    display: none;
+  }
+
+  .desktop-illustration {
+    display: block;
+  }
+
+  body {
+    justify-content: center;
+    background-color: hsl(235, 18%, 26%);
+  }
+
+  main {
+    flex-direction: row-reverse;
+    max-width: 900px;
+    border-radius: 15px;
+    padding: 15px;
+    align-self: center;
+  }
+
+  .content-container {
+    padding: 30px 50px 30px 30px;
+  }
+
+  .content-container h1 {
+    font-size: 3rem;
+  }
+
+  footer {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+  }
+
+  footer a {
+    color: hsl(4, 100%, 67%);
+  }
 }
