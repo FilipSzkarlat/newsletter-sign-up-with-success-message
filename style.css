@@ -42,6 +42,7 @@ main {
 
 .content-thanks-message img {
   width: 64px;
+  margin-top: 20px;
 }
 
 .content-thanks-message h1 {
@@ -133,6 +134,7 @@ footer {
 
 /* DESKTOP VIEW */
 @media (min-width: 380px) {
+  /* MAIN CONTENT */
   .mobile-illustration {
     display: none;
   }
@@ -162,6 +164,7 @@ footer {
     font-size: 3rem;
   }
 
+  /* FOOTER */
   footer {
     color: white;
     position: absolute;
@@ -170,5 +173,12 @@ footer {
 
   footer a {
     color: hsl(4, 100%, 67%);
+  }
+
+  /* THANKS CONTENT */
+  .container-thanks-message {
+    max-width: 400px;
+    max-height: 450px;
+    min-height: inherit;
   }
 }
