@@ -68,6 +68,7 @@ main {
 
 button:hover {
   cursor: pointer;
+  background: linear-gradient(0.25turn, #ff527b, #ff6a3a);
 }
 
 .button {
