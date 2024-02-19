@@ -57,10 +57,20 @@
         </div>
 
         <form action="thanks.html">
-          <label for="email">Email address</label>
-          <input name="email" type="text" placeholder="email@company.com" />
+          <div class="input-name">
+            <label for="email">Email address</label>
+            <p id="error-message" style="display: none">Valid email required</p>
+          </div>
+          <input
+            id="email"
+            name="email"
+            type="text"
+            placeholder="email@company.com"
+          />
 
-          <button class="button">Subscribe to monthly newsletter</button>
+          <button onclick="emailValidation()" class="button">
+            Subscribe to monthly newsletter
+          </button>
         </form>
       </div>
 

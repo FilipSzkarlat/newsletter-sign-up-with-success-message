@@ -111,6 +111,11 @@ button:hover {
   font-weight: 400;
 }
 
+.input-name {
+  display: flex;
+  justify-content: space-between;
+}
+
 form label {
   font-weight: 700;
   font-size: small;
@@ -123,6 +128,16 @@ form input {
   border-radius: 5px;
   border: 1px solid lightgray;
   margin: 10px 0 25px 0;
+}
+
+form input:hover {
+  cursor: pointer;
+}
+
+#error-message {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 /* FOOTER */
